@@ -36,7 +36,6 @@ The main purpose of Polybar is to help users create awesome status bars. It has 
 
 - Systray icons
 - Window title
-- Playback controls and status display for MPD using libmpdclient
 - ALSA volume controls
 - Workspace and desktop panel for bspwm and i3
 - Workspace module for EWMH compliant window managers
@@ -1452,15 +1451,7 @@ If the brightness module is not working on your system, Edit `modules.ini` & `ba
 
 If the battery module is not working on your system, Edit `modules.ini` & `bars.ini` files and...
 - Use `ls -l /sys/class/power_supply/` command to list batteries and adapters.
-- Replace `BAT1` and `ACAD` with your batteries and adapters. (eg: `battery = BAT0`)
-
-**`5. MPD module is not working`** : 
-
-If the mpd module is not working on your system...
-- Make sure you've mpd installed and running.
-- Make sure you've songs on your playlist.
-- If mpd daemon is not running on localhost, edit `host = `, `port = ` and `password = ` values accordingly.
-- Make sure mpd is installed before you compile the polybar.
+- Replace `BAT1` and `AC` with your batteries and adapters. (eg: `battery = BAT0`)
 
 **`6. Temperature module is not working`** : 
 

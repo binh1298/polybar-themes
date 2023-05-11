@@ -29,12 +29,6 @@ elif [[ "$1" == "--system" ]]; then
 	polybar -q primary -c $DIR/system.ini &
 	polybar -q secondary -c $DIR/system.ini &
 
-## Mpd
-elif [[ "$1" == "--mpd" ]]; then
-	kill_bar
-	polybar -q primary -c $DIR/mpd.ini &
-	polybar -q secondary -c $DIR/mpd.ini &
-
 ## Workspaces
 elif [[ "$1" == "--ws" ]]; then
 	kill_bar
@@ -62,7 +56,7 @@ elif [[ "$1" == "--fs" ]]; then
 else
 	cat <<- _EOF_
 	No widget specified, Available widgets:
-	--main    --apps    --system    --mpd
+	--main    --apps    --system    
 	--ws      --cpu     --memory    --fs
 	_EOF_
 fi
